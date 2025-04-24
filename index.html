@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternar Imagem e Descrição</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Imagem inicial -->
+  <img id="imagem" src="café.jpg" alt="Servindo café na xícara">
+  <!-- Descrição que será alternada -->
+  <div id="descricao" class="description">
+    O orvalho ainda veste a roseira,
+    Um sussurro de vento na mangueira,
+    E o sol preguiçoso, em tons de aquarela,
+    Desperta a cidade, tão singela.
+    
+    Mas antes da pressa, da lida que chama,
+    Um aroma se eleva, que acalma e inflama.
+    O café fumegante, néctar escuro e quente,
+    Promessa de força, em cada semente.
+    
+    Na xícara morna, a vida se acorda,
+    Um gole que espanta a sombra que recorda
+    A noite que finda, os sonhos que voam,
+    E traz para perto quem a alma adoça e apoia.
+    
+    No raio de luz que na mesa se estende,
+    Um olhar se cruza, o amor que se acende.
+    Um toque suave, um sorriso singelo,
+    Compartilhando o instante, o aconchego.
+    
+    Pois nessa alquimia da aurora que irradia,
+    Café, manhã e amor, em doce melodia,
+    Nutrem a alma, aquecem o peito,
+    E dão ao dia um começo perfeito. 
+</div>
+
+<script>
+  // Selecionando os elementos do DOM
+  const imagem = document.getElementById('imagem');
+  const descricao = document.getElementById('descricao');
+
+  // Variável para controlar o estado atual
+  let mostrandoDescricao = false;
+
+  // Adicionando um evento de clique à imagem
+  imagem.addEventListener('click', () => {
+    if (mostrandoDescricao) {
+      // Se estiver mostrando a descrição, volte para a imagem
+      imagem.style.display = 'block';
+      descricao.style.display = 'none';
+    } else {
+      // Se estiver mostrando a imagem, exiba a descrição
+      imagem.style.display = 'none';
+      descricao.style.display = 'block';
+    }
+    // Alternando o estado
+    mostrandoDescricao = !mostrandoDescricao;
+  });
+</script>
+
+</body>
+</html>

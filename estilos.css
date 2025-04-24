@@ -1,0 +1,20 @@
+/* Estilização básica */
+.container {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.description {
+  display: none; /* Inicialmente oculto */
+  margin-top: 10px;
+  font-size: 16px;
+  color: #4e3010;
+}
