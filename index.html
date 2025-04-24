@@ -39,29 +39,7 @@
     E dão ao dia um começo perfeito. 
 </div>
 
-<script>
-  // Selecionando os elementos do DOM
-  const imagem = document.getElementById('imagem');
-  const descricao = document.getElementById('descricao');
-
-  // Variável para controlar o estado atual
-  let mostrandoDescricao = false;
-
-  // Adicionando um evento de clique à imagem
-  imagem.addEventListener('click', () => {
-    if (mostrandoDescricao) {
-      // Se estiver mostrando a descrição, volte para a imagem
-      imagem.style.display = 'block';
-      descricao.style.display = 'none';
-    } else {
-      // Se estiver mostrando a imagem, exiba a descrição
-      imagem.style.display = 'none';
-      descricao.style.display = 'block';
-    }
-    // Alternando o estado
-    mostrandoDescricao = !mostrandoDescricao;
-  });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
